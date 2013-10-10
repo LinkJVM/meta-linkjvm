@@ -9,7 +9,7 @@ S = "${WORKDIR}/git"
 COMPATIBLE_MACHINE = "kovan"
 SRCREV = "HEAD"
 LICENSE = "GPLv3"
-LIC_FILES_CHKSUM = "file://${S}/LICENSE;md5=5db6e3eeebad5526401d10dc7221871f"
+LIC_FILES_CHKSUM = "file://${S}/LICENSE.txt;md5=5db6e3eeebad5526401d10dc7221871f"
 PR = "r1"
 HAMEPAGE = "http://LinkJVM.github.io/LinkJVM"
 
