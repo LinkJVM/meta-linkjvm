@@ -10,7 +10,7 @@ COMPATIBLE_MACHINE = "kovan"
 SRCREV = "HEAD"
 LICENSE = "GPLv3"
 LIC_FILES_CHKSUM = "file://${S}/LICENSE.txt;md5=5db6e3eeebad5526401d10dc7221871f"
-PR = "r21"
+PR = "r27"
 HAMEPAGE = "http://LinkJVM.github.io/LinkJVM"
 
 EXTRA_OECMAKE = "--no-warn-unused-cli -DKOVAN=1 -DCMAKE_BUILD_TYPE=Debug"
@@ -27,6 +27,7 @@ do_install() {
 	cp -r  ${S}/java-environment/classpath/* ${D}/usr
 	install -d ${D}/usr/lib/ecj
 	install -m 0755 ${S}/java-environment/javac/ecj-3.7.jar ${D}/usr/lib/ecj
+	chmod +x ${D}/usr/bin/jamvm
 }
 
 FILES_${PN} += "${libdir}/liblinkjvm-jni.so"
