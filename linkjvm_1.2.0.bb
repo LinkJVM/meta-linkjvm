@@ -19,12 +19,12 @@ OECMAKE_SOURCEPATH = "${S}"
 
 do_install() {
 	install -d ${D}/usr/lib
-	install -m 0755 ${S}/lib/linkjvm-jni.so ${D}/usr/lib
+	install -m 0755 ${S}/lib/liblinkjvm-jni.so ${D}/usr/lib
 	install -m 0755 ${S}/lib/linkjvm-java.jar ${D}/usr/lib
 	
 	install -d ${D}/usr
-	install -m 0755 ${S}/java-environment/jamvm/* ${D}/usr
-	install -m 0755 ${S}/java-environment/classpath/* ${D}/usr
+	cp -r ${S}/java-environment/jamvm/* ${D}/usr
+	cp -r  ${S}/java-environment/classpath/* ${D}/usr
 	install -d ${D}/usr/lib/ecj
 	install -m 0755 ${S}/java-environment/javac/ecj-3.7.jar ${D}/usr/lib/ecj
 }
