@@ -76,7 +76,7 @@ do_install() {
 	install -m 0755 ${S}/java-environment/classpath/lib/classpath/libjavautil.so.0 ${D}/usr/lib/classpath
 	install -m 0755 ${S}/java-environment/classpath/lib/classpath/libjavautil.so.0.0.0 ${D}/usr/lib/classpath
 	install -m 0755 ${S}/java-environment/classpath/lib/classpath/libjawt.la ${D}/usr/lib/classpath
-	install -m 0755 ${S}/java-environment/classpath/lib/classpath/libjawt.so ${D}/usr/lib/classpathh
+	install -m 0755 ${S}/java-environment/classpath/lib/classpath/libjawt.so ${D}/usr/lib/classpath
 	install -m 0755 ${S}/java-environment/classpath/include/jawt.h ${D}/usr/include
 	install -m 0755 ${S}/java-environment/classpath/include/jawt_md.h ${D}/usr/include
 	install -m 0755 ${S}/java-environment/classpath/include/jni_md.h ${D}/usr/include
