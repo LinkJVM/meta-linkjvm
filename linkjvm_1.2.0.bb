@@ -11,7 +11,7 @@ SRCREV = "HEAD"
 LICENSE = "GPLv3"
 LIC_FILES_CHKSUM = "file://${S}/LICENSE.txt;md5=5db6e3eeebad5526401d10dc7221871f"
 PR = "r27"
-HAMEPAGE = "http://LinkJVM.github.io/LinkJVM"
+HOMEPAGE = "http://linkjvm.github.io"
 
 EXTRA_OECMAKE = "--no-warn-unused-cli -DKOVAN=1 -DCMAKE_BUILD_TYPE=Debug"
 
