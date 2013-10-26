@@ -28,14 +28,13 @@ do_install() {
         install -d ${D}/usr/lib/ecj
 	install -m 0755 ${S}/java-environment/javac/ecj-3.7.jar ${D}/usr/lib/ecj
         install -m 0755 ${S}/bin/javac ${D}/usr/bin
-	chmod +x ${D}/usr/bin/jamvm
-        ln -s ${D}/usr/bin/jamvm ${D}/usr/bin/java
+	chmod +x ${D}/usr/bin/java
 }
 
 FILES_${PN} += "${libdir}/liblinkjvm-jni.so"
 FILES_${PN} += "${libdir}/linkjvm-java.jar"
 
-FILES_${PN} += "${bindir}/jamvm"
+FILES_${PN} += "${bindir}/java"
 FILES_${PN} += "${bindir}/java"
 FILES_${PN} += "${includedir}/jni.h"
 FILES_${PN} += "${libdir}/libjvm.la"
